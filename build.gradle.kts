@@ -11,14 +11,11 @@ plugins {
 	//id ("de.gliderpilot.semantic-release") version "1.0.0"
 	//id("pl.allegro.tech.build.axion-release") version "1.11.0"
 	//id("ch.netzwerg.release") version "1.2.3"
-	//id("net.researchgate.release") version "2.6.0"
-	id("org.ajoberstar.reckon") version "0.12.0"
+	id("net.researchgate.release") version "2.6.0"
+	//id("org.ajoberstar.reckon") version "0.12.0"
 }
 
-reckon {
-	scopeFromProp()
-	stageFromProp("beta", "rc", "final")
-}
+
 group = "com.github.alexandrenavarro"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
