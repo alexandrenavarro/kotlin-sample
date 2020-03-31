@@ -9,7 +9,9 @@ plugins {
 
 	//id("net.thauvin.erik.gradle.semver") version "1.0.4"
 	//id ("de.gliderpilot.semantic-release") version "1.0.0"
-	id("pl.allegro.tech.build.axion-release") version "1.11.0"
+	//id("pl.allegro.tech.build.axion-release") version "1.11.0"
+	//id("ch.netzwerg.release") version "1.2.3"
+	id("net.researchgate.release") version "2.6.0"
 }
 
 group = "com.github.alexandrenavarro"
@@ -19,7 +21,6 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 repositories {
 	mavenCentral()
 }
-project.version = scmVersion.version
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
