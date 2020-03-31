@@ -5,6 +5,11 @@ plugins {
 	id("io.spring.dependency-management") version "1.0.9.RELEASE"
 	kotlin("jvm") version "1.3.71"
 	kotlin("plugin.spring") version "1.3.71"
+	id("com.github.ben-manes.versions") version "0.28.0"
+
+	//id("net.thauvin.erik.gradle.semver") version "1.0.4"
+	//id ("de.gliderpilot.semantic-release") version "1.0.0"
+	id("pl.allegro.tech.build.axion-release") version "1.11.0"
 }
 
 group = "com.github.alexandrenavarro"
@@ -14,6 +19,7 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 repositories {
 	mavenCentral()
 }
+project.version = scmVersion.version
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
